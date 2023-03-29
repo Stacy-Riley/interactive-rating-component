@@ -22,6 +22,8 @@ body {
   min-height: 100%;
 }
 
+/*********** Rating Page **************************/
+
 .rating-box-wrapper {
   background: linear-gradient(#232A34 0%, #181E27 100%);
   width: 327px;
@@ -94,21 +96,24 @@ input {
   line-height: 24px;
   font-weight: 700;
 }
+
 input:hover {
   background-color: #FC7614;
   color: #ffffff;
 }
+
 input:focus {
   background-color: #7C8798;
   color: #ffffff;
 }
+
 .submit-button {
   border: none;
   width: 279px;
   height: 45px;
   background-color: #FC7614;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   margin: 0;
   margin-left: 24px;
   margin-right: 24px;
@@ -120,21 +125,23 @@ input:focus {
   background-color: #ffffff;
   color:#FC7614;
 }
+
 /***********************************************/
 /***********************************************/
 /* Change state section */
 /* .hide-survey {
   display: none;
-} */
+}
 
 .hide-thanks {
   display: none;
-}
+} */
 /***********************************************/
 /***********************************************/
 
 
-/* Thank you page */
+/*********** Thank You Page **************************/
+
 .thank-you-box-wrapper {
   background: linear-gradient(#232A34 0%, #181E27 100%);
   width: 327px;
@@ -163,7 +170,7 @@ input:focus {
   background-color: #262E38;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 400px;
+  font-weight: 500px;
   border-radius: 15px;
   padding: 5px 12px;
   margin: 0;
@@ -187,9 +194,32 @@ input:focus {
   margin: 17px 24px 37px 24px;
 }
 
+/*****************Footer ****************************/
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: #FC7614;
+}
+
+.attribution p {
+  margin-bottom: 0;
+}
+.coded-by {
+  margin-top: 0;
+}
+
+/****************************************************/
+/****************************************************/
 /* Desktop View */
+/****************************************************/
+/****************************************************/
+
 @media(min-width: 1200px){
+
+  /*********** Rating Page **************************/
   .rating-box-wrapper {
+    border-radius: 30px;
     width: 412px;
     height: 416px;
   }
@@ -200,6 +230,7 @@ input:focus {
     margin-left: 32px;
     margin-top: 32px;
   }
+
   .star {
     width: 16.75px;
     height: 16px;
@@ -207,12 +238,14 @@ input:focus {
     left: 16px;
     top: 16px;
   }
+
   h1 {
     font-size: 28px;
     font-weight: 700;
     line-height: 35.45px;
     margin: 30px 0 0 32px;
   }
+
   .intro-message {
     font-weight: 400;
     font-size: 15px;
@@ -224,12 +257,6 @@ input:focus {
     margin-bottom: 24px;
   }
   fieldset {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    border: none;
-    padding: 0; */
     margin-left: 32px;
     margin-right: 39px;
     margin-bottom: 32px;
@@ -237,25 +264,53 @@ input:focus {
 
   .submit-button {
     width: 341px;
-    /* height: 45px;
-    background-color: #FC7614;
-    color: #ffffff;
-    border-radius: 20px;
-    margin: 0; */
-    /* margin-top: 10px; */
     margin-left: 32px;
     margin-right: 39px;
     margin-bottom: 32px;
   }
+
   input {
-    /* background-color: #262E38; */
     width: 51px;
     height: 51px;
-    /* border: none;
-    border-radius: 50%;
-    color: #7C8798; */
     font-size: 16px;
-    /* line-height: 24px;
-    font-weight: 700; */
+  }
+
+  /*********** Thank You Page **************************/
+  .thank-you-box-wrapper {
+    border-radius: 30px;
+    width: 412px;
+    height: 416px;
+  }
+  
+  .thank-you-illustration {
+    width: 162px;
+    height: 108px;
+    margin-top: 45px;
+    margin-left: 121px;
+    margin-right: 129px;
+  }
+  
+  .display-score {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 4px 19px 4px 20px;
+    margin: 0;
+    margin-top: 32px;
+  }
+  
+  .thank-you {
+    font-size: 28px;
+    line-height: 35.45px;
+    font-weight: 700;
+    margin-top: 32px;
+  }
+  
+  .thank-you-message {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 15px 40px 45px 32px;
   }
 }
