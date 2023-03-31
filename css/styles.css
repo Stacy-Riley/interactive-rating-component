@@ -170,7 +170,7 @@ input:focus {
   background-color: #262E38;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 500px;
+  font-weight: 500;
   border-radius: 15px;
   padding: 5px 12px;
   margin: 0;
@@ -256,6 +256,7 @@ input:focus {
     margin-top: 7px;
     margin-bottom: 24px;
   }
+
   fieldset {
     margin-left: 32px;
     margin-right: 39px;
